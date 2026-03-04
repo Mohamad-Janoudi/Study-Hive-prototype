@@ -1,0 +1,139 @@
+#the prompt
+
+Create a full university SaaS website using Next.js (App Router).
+
+Project Requirements:
+
+1) Landing Page:
+- Modern, premium, professional landing page.
+- The company provides university lecture summaries in Question & Answer format.
+- Include:
+  - Hero section with strong headline, subtext, CTA buttons (Sign Up / Login)
+  - Features section (Q&A summaries, 5 academic years, faster studying)
+  - About section
+  - Testimonials section
+  - Footer
+- Use suitable royalty-free images (Unsplash).
+- Fully responsive (mobile-first design).
+- Premium modern UI (Tailwind CSS + clean spacing + soft shadows + rounded cards).
+
+2) Authentication (Advanced Version):
+- Implement proper authentication (JWT-based).
+- Use HTTP-only cookies for security.
+- Create:
+  - /auth/signup
+  - /auth/login
+- Store users securely (use mock database).
+- Add password hashing (bcrypt).
+- Add logout functionality.
+- Protect routes properly.
+
+3) Middleware Protection:
+- Implement Next.js middleware.
+- Block access to /dashboard if user is not authenticated.
+- Redirect unauthorized users to /auth/login.
+- Use secure token validation inside middleware.
+
+4) Dashboard (Protected Page):
+- Route: /dashboard
+- Only accessible when authenticated.
+- Add Tabs component with 5 tabs:
+  - Year 1
+  - Year 2
+  - Year 3
+  - Year 4
+  - Year 5
+- Each tab displays lecture summaries in structured Q&A format.
+- Tabs should be interactive and responsive.
+- Add logout button in navbar.
+
+5) Production-Level SaaS Architecture:
+- Proper folder structure:
+  - app/
+  - components/
+  - lib/
+  - middleware.ts
+  - models/
+  - services/
+  - api/
+- Use reusable components (Navbar, Tabs, AuthForm, Card, Button).
+- Separate business logic from UI.
+- Clean code and scalable structure.
+- Environment variables for secrets.
+- Error handling.
+- Loading states.
+- Form validation.
+
+6) Premium UI Design:
+- Modern SaaS style.
+- Smooth hover effects.
+- Clean typography.
+- Responsive navbar.
+- Mobile menu.
+- Consistent color palette.
+- Professional spacing system.
+
+7) Technical Requirements:
+- Next.js App Router.
+- Tailwind CSS.
+- No TypeScript errors.
+- Clean readable code.
+- Everything fully responsive for mobile, tablet, and desktop.
+
+Generate all required files with proper structure and working logic.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+#what codex did
+
+Implemented a full Next.js App Router university SaaS with premium landing UI, JWT auth (HTTP-only cookie), middleware protection, and protected dashboard tabs.
+
+What I added
+
+Landing page with hero/features/about/testimonials/footer and Unsplash visuals: [app/page.tsx](c:\Users\x-4\Videos\Study Hive - Copy\app\page.tsx)
+Premium global styling + custom typography setup: [app/globals.css](c:\Users\x-4\Videos\Study Hive - Copy\app\globals.css), [app/layout.tsx](c:\Users\x-4\Videos\Study Hive - Copy\app\layout.tsx)
+Reusable UI/components:
+[components/ui/Button.tsx](c:\Users\x-4\Videos\Study Hive - Copy\components\ui\Button.tsx)
+[components/ui/Card.tsx](c:\Users\x-4\Videos\Study Hive - Copy\components\ui\Card.tsx)
+[components/Navbar.tsx](c:\Users\x-4\Videos\Study Hive - Copy\components\Navbar.tsx)
+[components/AuthForm.tsx](c:\Users\x-4\Videos\Study Hive - Copy\components\AuthForm.tsx)
+[components/DashboardTabs.tsx](c:\Users\x-4\Videos\Study Hive - Copy\components\DashboardTabs.tsx)
+Auth pages:
+[app/auth/login/page.tsx](c:\Users\x-4\Videos\Study Hive - Copy\app\auth\login\page.tsx)
+[app/auth/signup/page.tsx](c:\Users\x-4\Videos\Study Hive - Copy\app\auth\signup\page.tsx)
+Protected dashboard + loading state:
+[app/dashboard/page.tsx](c:\Users\x-4\Videos\Study Hive - Copy\app\dashboard\page.tsx)
+[app/dashboard/loading.tsx](c:\Users\x-4\Videos\Study Hive - Copy\app\dashboard\loading.tsx)
+JWT/cookie auth backend APIs:
+[app/api/auth/signup/route.ts](c:\Users\x-4\Videos\Study Hive - Copy\app\api\auth\signup\route.ts)
+[app/api/auth/login/route.ts](c:\Users\x-4\Videos\Study Hive - Copy\app\api\auth\login\route.ts)
+[app/api/auth/logout/route.ts](c:\Users\x-4\Videos\Study Hive - Copy\app\api\auth\logout\route.ts)
+[app/api/auth/me/route.ts](c:\Users\x-4\Videos\Study Hive - Copy\app\api\auth\me\route.ts)
+Middleware protection for /dashboard: [middleware.ts](c:\Users\x-4\Videos\Study Hive - Copy\middleware.ts)
+SaaS architecture layers:
+[lib/auth.ts](c:\Users\x-4\Videos\Study Hive - Copy\lib\auth.ts)
+[lib/env.ts](c:\Users\x-4\Videos\Study Hive - Copy\lib\env.ts)
+[lib/validators.ts](c:\Users\x-4\Videos\Study Hive - Copy\lib\validators.ts)
+[lib/mock-db.ts](c:\Users\x-4\Videos\Study Hive - Copy\lib\mock-db.ts)
+[models/user.ts](c:\Users\x-4\Videos\Study Hive - Copy\models\user.ts)
+[services/auth-service.ts](c:\Users\x-4\Videos\Study Hive - Copy\services\auth-service.ts)
+[services/lecture-service.ts](c:\Users\x-4\Videos\Study Hive - Copy\services\lecture-service.ts)
+[api/client.ts](c:\Users\x-4\Videos\Study Hive - Copy\api\client.ts)
+Next/image Unsplash remote config: [next.config.ts](c:\Users\x-4\Videos\Study Hive - Copy\next.config.ts)
+Env template: [.env.example](c:\Users\x-4\Videos\Study Hive - Copy\.env.example)
+Dependencies updated (bcryptjs, jose, zod) in [package.json](c:\Users\x-4\Videos\Study Hive - Copy\package.json)
+Validation
+
+npm run lint passes.
+npm run build passes.
+Note: Next 16 shows a warning that middleware.ts is deprecated in favor of proxy, but your required middleware behavior is implemented and working.
+Important note
+
+Current storage is a mock in-memory DB (lib/mock-db.ts), as allowed. Data resets on server restart.
+Set JWT_SECRET in your .env.local (see .env.example) before production use.
+Natural next steps:
+
+Replace mock DB with MongoDB (Mongoose/Prisma) while keeping the same service layer.
+Add email verification + password reset flow.
+Add user-specific lecture libraries and saved progress in dashboard.
+
+
+
