@@ -1,0 +1,105 @@
+{
+  "navbar": {
+    "brand": "Study Hive",
+    "features": "Features",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "languageSwitchToArabic": "العربية",
+    "languageSwitchToEnglish": "English",
+    "darkMode": "Dark mode",
+    "lightMode": "Light mode",
+    "openMenu": "Open mobile menu",
+    "closeMenu": "Close mobile menu"
+  },
+  "hero": {
+    "badge": "University SaaS Platform",
+    "title": "Master university lectures with premium Q&A summaries.",
+    "description": "Study Hive gives students clean, high-impact lecture summaries in question and answer format, mapped from Year 1 to Year 5 for faster, deeper learning.",
+    "signup": "Sign Up",
+    "login": "Login"
+  },
+  "features": {
+    "heading": "Everything you need to study efficiently",
+    "subheading": "Built for students who want clarity, speed, and consistent results.",
+    "items": [
+      {
+        "title": "Structured Q&A Summaries",
+        "description": "Turn every lecture into focused questions and concise model answers for active recall."
+      },
+      {
+        "title": "Coverage Across 5 Academic Years",
+        "description": "Navigate from foundational topics to capstone content with organized year-based materials."
+      },
+      {
+        "title": "Faster, Smarter Studying",
+        "description": "Reduce revision time and improve exam performance with high-yield study packs."
+      }
+    ]
+  },
+  "about": {
+    "heading": "About Study Hive",
+    "paragraphOne": "We built Study Hive to solve one core problem: university content is huge, but student time is limited. Our platform distills lectures into clear Q&A summaries so you can revise faster and remember longer.",
+    "paragraphTwo": "Whether you are entering Year 1 or preparing for final-year assessments, Study Hive keeps your preparation structured, practical, and exam-focused."
+  },
+  "testimonials": {
+    "heading": "Trusted by ambitious students",
+    "items": [
+      {
+        "quote": "Study Hive helped me cut revision time in half while keeping my grades consistently high.",
+        "name": "Maya R.",
+        "role": "Year 3 Medical Student"
+      },
+      {
+        "quote": "The Q&A structure makes dense lectures easy to remember before exams.",
+        "name": "Daniel K.",
+        "role": "Year 2 Engineering Student"
+      },
+      {
+        "quote": "It feels like having a study mentor that organizes everything for you.",
+        "name": "Sara T.",
+        "role": "Year 5 Law Student"
+      }
+    ]
+  },
+  "footer": {
+    "rights": "© {{year}} Study Hive. All rights reserved.",
+    "login": "Login",
+    "signup": "Sign Up"
+  },
+  "auth": {
+    "welcomeBack": "Welcome back",
+    "createAccount": "Create your account",
+    "loginDescription": "Log in to continue your university prep.",
+    "signupDescription": "Start getting structured Q&A lecture summaries.",
+    "nameLabel": "Full name",
+    "namePlaceholder": "John Doe",
+    "nameRequired": "Name is required.",
+    "nameMinLength": "At least 2 characters.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "student@university.edu",
+    "emailRequired": "Email is required.",
+    "emailInvalid": "Enter a valid email.",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "At least 8 characters",
+    "passwordRequired": "Password is required.",
+    "passwordMinLength": "At least 8 characters.",
+    "serverError": "Authentication failed.",
+    "loginCta": "Login",
+    "signupCta": "Create account",
+    "waiting": "Please wait...",
+    "noAccount": "No account yet?",
+    "alreadyAccount": "Already have an account?",
+    "switchToSignup": "Sign up",
+    "switchToLogin": "Log in"
+  },
+  "dashboard": {
+    "heading": "Your Study Dashboard",
+    "description": "Browse lecture summaries in Q&A format across all five academic years.",
+    "tabs": ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5"],
+    "questionLabel": "Question",
+    "answerLabel": "Answer"
+  }
+}

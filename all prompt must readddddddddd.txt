@@ -1,3 +1,86 @@
+#Structure 
+
+├── all prompt must readddddddddd
+├── public/
+│   └── locales/
+│       ├── ar/
+│       │   └── common.json
+│       └── en/
+│           └── common.json
+└── src/
+    ├── app/
+    │   ├── globals.css
+    │   ├── layout.tsx
+    │   ├── page.tsx
+    │   ├── api/
+    │   │   └── auth/
+    │   │       ├── login/
+    │   │       │   └── route.ts
+    │   │       ├── logout/
+    │   │       │   └── route.ts
+    │   │       ├── me/
+    │   │       │   └── route.ts
+    │   │       └── signup/
+    │   │           └── route.ts
+    │   ├── auth/
+    │   │   ├── client/
+    │   │   │   ├── LoginContent.tsx
+    │   │   │   ├── LoginPageEntry.tsx
+    │   │   │   ├── SignupContent.tsx
+    │   │   │   └── SignupPageEntry.tsx
+    │   │   ├── login/
+    │   │   │   └── page.tsx
+    │   │   └── signup/
+    │   │       └── page.tsx
+    │   ├── client/
+    │   │   ├── HomeContent.tsx
+    │   │   └── HomePageEntry.tsx
+    │   └── dashboard/
+    │       ├── error.tsx
+    │       ├── layout.tsx
+    │       ├── loading.tsx
+    │       └── page.tsx
+    ├── components/
+    │   ├── layout/
+    │   │   └── Navbar.tsx
+    │   ├── sections/
+    │   │   ├── About.tsx
+    │   │   ├── Features.tsx
+    │   │   ├── Footer.tsx
+    │   │   ├── Hero.tsx
+    │   │   └── Testimonials.tsx
+    │   └── ui/
+    │       ├── Button.tsx
+    │       └── Card.tsx
+    ├── context/
+    │   ├── AuthContext.tsx
+    │   ├── LanguageContext.tsx
+    │   └── ThemeContext.tsx
+    ├── features/
+    │   ├── auth/
+    │   │   ├── AuthForm.tsx
+    │   │   ├── index.ts
+    │   │   └── service.ts
+    │   └── lectures/
+    │       ├── DashboardClientWrapper.tsx
+    │       ├── DashboardContent.tsx
+    │       ├── DashboardTabs.tsx
+    │       ├── index.ts
+    │       └── service.ts
+    ├── hooks/
+    │   ├── useAuth.ts
+    │   ├── useLanguage.ts
+    │   └── useTheme.ts
+    ├── lib/
+    │   ├── api.ts
+    │   ├── auth.ts
+    │   ├── env.ts
+    │   ├── i18n.ts
+    │   ├── mock-db.ts
+    │   └── validators.ts
+    └── types/
+        └── user.ts
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 #the prompt
 
 Create a full university SaaS website using Next.js (App Router).
